@@ -23,7 +23,7 @@ var criteriaFormHandler = function(event) {
     var passChars=[];
   //validate inputs
 
-  //how do I get these values into the generatePassword function to check this? Create an object to pass into function?
+  //concat selected arrays to the passChars array
 if (uppCheck.checked === true) {
   passChars=upperChars.concat(passChars);    
 } 
@@ -37,19 +37,28 @@ if (numCheck.checked === true) {
   passChars=numericChars.concat(passChars);
 }
 
-console.log(passChars);
-
   if (lengthInput === "" || lengthInput < 8 ||lengthInput > 128) {
     alert("Please enter a valid length between 8 and 128");
     
   } else if (lowCheck.checked ===false && uppCheck.checked ===false && numCheck.checked ===false && spCheck.checked===false) {
-    alert("Please select at least one character criteria in order to generate your password");
+    alert("Please select at least one character criteria in order to generate your password");    
+   } 
 
-    
-    
-//Form check works, now pass that information into the password generator
+   var passString=
 
-  } 
+
+//Form check works, now need to create a loop to generate the password
+var passwordText = document.querySelector("#password");
+passwordText.value = "Gibbity Goo";
+
+
+// for ( var i=0; i < lengthInput; i++) {
+//   //iterate by selecting random character from passChars array
+//   //use Math object to select a random array position by multiplying by the chosen length.
+//   //how to make Math array; var password = then add each character to password text?
+// var password = Math.floor(Math.random()*passChars.length);
+// }  
+   
 }
 var generateBtn = document.querySelector("#generate");
   generateBtn.addEventListener("click", criteriaFormHandler);
@@ -70,14 +79,9 @@ var generateBtn = document.querySelector("#generate");
 
 
  
-// //once I figure out how to pass these values in to be checked, create the loop to select random values
+//once I figure out how to pass these values in to be checked, create the loop to select random values
 
-// for ( var i=0; i < lengthInput; i++) {
-//   //iterate by selecting random character from passChars array
-//   //use Math object to select a random array position by multiplying by the chosen length.
-//   //how to make Math array; var password = then add each character to password text?
-// var password = Math.floor(Math.random()*passChars.length);
-// }  
+
 
 // }
 
