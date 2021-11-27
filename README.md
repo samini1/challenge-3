@@ -14,5 +14,3 @@ CSS
 Javascript
 
 website: https://samini1.github.io/challenge-3/
-
-![alt text](screenshots/screenshot.png "Should look like this")
