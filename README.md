@@ -1,23 +1,16 @@
 # Password Generator
 
-#This application should randomly generate a password that provides greater security.
+## Intended functionality
 
-## Needed functionality
+This application should randomly generate a password that provides greater security when the user presses the "Generate" button.
 
-clickButton creates prompts for password criteria user can select
+Given a series of prompts, the user should be able to choose the length of their password and customize included character types from a number of criteria including lowercase, uppercase, numeric, and special. 
 
-promptLength --> user chooses minimum 8, maximum 128 characters. 
-    lengthError- user chooses less than 8 or more than 128, allow user to try again.
+The password should be displayed in the text area of the page after it has been generated.
 
-if at least one character type prompt is confirmed, password generator should run;
-else, prompt user to return to start of loop;
+## Created using:
+HTML
+CSS
+Javascript
 
-generatePassword --> 
-    checks character length
-    checks to include lowercase
-    checks to include uppercase
-    checks to unclude Numeric
-    checks to include Special
-    randomly generates password from these arrays.
-        How do I do this?
-        Needs to check if at least 1 from each confirmed type is included?
+website: https://samini1.github.io/challenge-3/
