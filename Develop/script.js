@@ -39,9 +39,11 @@ if (numCheck.checked === true) {
 
   if (lengthInput === "" || lengthInput < 8 ||lengthInput > 128) {
     alert("Please enter a valid length between 8 and 128");
+    return false;
     
   } else if (lowCheck.checked ===false && uppCheck.checked ===false && numCheck.checked ===false && spCheck.checked===false) {
-    alert("Please select at least one character criteria in order to generate your password");    
+    alert("Please select at least one character criteria in order to generate your password");
+    return false;    
    } 
 
   //create an empty string to assign password characters
