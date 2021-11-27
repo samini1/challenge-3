@@ -14,3 +14,4 @@ CSS
 Javascript
 
 website: https://samini1.github.io/challenge-3/
+![image](https://github.com/samini1/challenge-3/blob/main/screenshot.png)
