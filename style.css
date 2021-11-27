@@ -30,9 +30,9 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
-.form-group input{
- border: 2px solid black;
- margin-right: 25px;
+.check-form {
+ display: flex;
+ flex-wrap: wrap;
 }
 
 .card {
@@ -138,5 +138,5 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
-  }
+  }  
 }
